@@ -6,4 +6,5 @@
  *
  */
 module study0524 {
+	
 }
