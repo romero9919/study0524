@@ -7,8 +7,8 @@ public class ExBoolean {
 		
 		// 선언
 		// 변수명은 defaultNy로 불리언 변수 선언
-		boolean defaultNy;
-		
+		boolean defaultNy = true;
+		System.out.println(defaultNy);
 		// 초기화
 		// 변수명은 default1Ny로 불리언 변수 선언 초기값은 true
 		boolean default1Ny = true;
@@ -21,6 +21,8 @@ public class ExBoolean {
 		} else {
 			System.out.println("여분값입니다.");
 		}
+		
+		System.out.println(default2ny);
 	}
 
 }
