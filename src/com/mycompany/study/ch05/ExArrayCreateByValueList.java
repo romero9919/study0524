@@ -22,10 +22,35 @@ public class ExArrayCreateByValueList {
 		// int[] scorePhysics;
 		// scorePhysics = {100, 99, 98, 97, 96};
 		// error
-		
+		// scoreChemistry[7] = 93; 컴파일 에러
+		scoreChemistry[0] = 0;
 		int a = scoreChemistry.length;
-		System.out.println(a);
-		System.out.println(scoreChemistry[0]);
+		// System.out.println(a);
+		// System.out.println(scoreChemistry[0]);
+		
+		int i=0;
+		
+		for(i=0; i<a; i++) {
+			int score = scoreChemistry[i];
+			System.out.println(score);
+		}
+		
+		while(i<a) {
+			int score = scoreChemistry[i];
+			System.out.println(score);
+			i++;
+		}
+		int sum = 0;
+		for(int bb: scoreChemistry) {
+			System.out.println(bb);
+			sum = sum + bb;
+		}
+		System.out.println(sum);
+		
+		int[] arr1 = new int[3];
+		arr1[0] = 100;
+		arr1[1] = 100;
+		arr1[2] = 100;
 	}
 
 }
