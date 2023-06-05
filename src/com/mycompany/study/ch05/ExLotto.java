@@ -1090,7 +1090,7 @@ public class ExLotto {
 		int max = 45;
 
 		
-
+		
 		int random = (int)(Math.random()*(max-min) + min);
 		int random2 = (int)(Math.random()*(max-min) + min);
 		int random3 = (int)(Math.random()*(max-min) + min);
