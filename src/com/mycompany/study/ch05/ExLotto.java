@@ -1086,27 +1086,22 @@ public class ExLotto {
 								"10/23/29/33/37/40",
 		};
 
-		int firstmin = 1;
-		int firstmax = 10;
-		int secondmin = 11;
-		int secondmax = 20;
-		int thirdmin = 21;
-		int thirdmax = 30;
-		int fourthmin = 31;
-		int fourthmax = 40;
-		int fifthmin = 41;
-		int fifthmax = 45;
+		int min = 1;
+		int max = 45;
+
 		
 
-		int random = (int)(Math.random()*(firstmax-firstmin) + firstmin);
-		int random2 = (int)(Math.random()*(secondmax-secondmin) + secondmin);
-		int random3 = (int)(Math.random()*(thirdmax-thirdmin) + thirdmin);
-		int random4 = (int)(Math.random()*(fourthmax-fourthmin) + fourthmin);
-		int random5 = (int)(Math.random()*(fifthmax-fifthmin) + fifthmin);
+		int random = (int)(Math.random()*(max-min) + min);
+		int random2 = (int)(Math.random()*(max-min) + min);
+		int random3 = (int)(Math.random()*(max-min) + min);
+		int random4 = (int)(Math.random()*(max-min) + min);
+		int random5 = (int)(Math.random()*(max-min) + min);
+		int random6 = (int)(Math.random()*(max-min) + min);
 		
-		int lotto[] = {random, random2, random3, random4, random5};
-		String lottoStr = Arrays.toString(lotto);
+		int lotto[] = {random, random2, random3, random4, random5, random6};
+		String lottoStr = random + "/" + random2 + "/" + random3 + "/" + random4 + "/" + random5 + "/" + random6;
 		
+		System.out.println(oldNumber[2] + " " + lottoStr);
 	}
 
 }
