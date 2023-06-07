@@ -1088,7 +1088,7 @@ public class ExLotto {
 
 		int min = 1;
 		int max = 45;
-
+		
 		
 		
 		int random = (int)(Math.random()*(max-min) + min);
@@ -1099,9 +1099,12 @@ public class ExLotto {
 		int random6 = (int)(Math.random()*(max-min) + min);
 		
 		int lotto[] = {random, random2, random3, random4, random5, random6};
-		String lottoStr = random + "/" + random2 + "/" + random3 + "/" + random4 + "/" + random5 + "/" + random6;
+		Arrays.sort(lotto);
 		
-		System.out.println(oldNumber[2] + " " + lottoStr);
+		System.out.println(Arrays.toString(lotto));
+		
+		
+		
 	}
 
 }
