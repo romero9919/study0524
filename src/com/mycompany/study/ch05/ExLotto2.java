@@ -1109,7 +1109,7 @@ public class ExLotto2 {
 						if(randomArray[i] == randomArray[j]) {
 							isSameNumber = true;
 							break aa;
-						}else {
+						} else {
 							isSameNumber = false;
 						}
 					}else {
