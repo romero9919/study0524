@@ -1093,54 +1093,61 @@ public class ExLotto2 {
 		while(isSameNumber || isLinearNumber || isSameOldNumber) {
 			for(int i=0; i<6; i++) {
 				random = (int) ((Math.random() * (max - min)) + min);
+				randomArray[i] = random;
 			}
-		}
-		Arrays.sort(randomArray);
 		
-		aa:
-		for(int i=0; i<6; i++) {
-			for(int j=0; j<6; j++) {
-				if (i != j) {
-					if(randomArray[i] == randomArray[j]) {
-						isSameNumber = true;
-						break aa;
+			Arrays.sort(randomArray);
+			
+			/*
+			 * for(int i=0; i<6; i++) { System.out.println(randomArray[i]); }
+			 */
+			
+			aa:
+			for(int i=0; i<6; i++) {
+				for(int j=0; j<6; j++) {
+					if (i != j) {
+						if(randomArray[i] == randomArray[j]) {
+							isSameNumber = true;
+							break aa;
+						}else {
+							isSameNumber = false;
+						}
 					}else {
-						isSameNumber = false;
+						
 					}
-				}else {
-					
 				}
 			}
-		}
-		
-		for(int i=0; i<4; i++) {
-			if(randomArray[i]+1 == randomArray[i+1]&&randomArray[i]+2==randomArray[i+2]) {
-				System.out.println("걸렸다."+ randomArray[i]+":"+randomArray[i+2]);
-				isLinearNumber = true;
-				break;
-			} else {
-				isLinearNumber = false;
+			
+			for(int i=0; i<4; i++) {
+				if(randomArray[i]+1 == randomArray[i+1]&&randomArray[i]+2==randomArray[i+2]) {
+					System.out.println("걸렸다."+ randomArray[i]+":"+ randomArray[i+1] + ":" + randomArray[i+2]);
+					isLinearNumber = true;
+					break;
+				} else {
+					isLinearNumber = false;
+				}
 			}
-		}
-		
-		randomString = "";
-		for(int i=0; i<6; i++) {
-			randomString += randomArray[i] + "/";		
-		}
-		randomString = randomString.substring(0, randomString.length()-1);
-		
-		for(int i=0; i<oldNumber.length; i++) {
-			if(randomString.equals(oldNumber[i])) {
-				isSameOldNumber = true;
-			} else {
-				isSameOldNumber = false;
+			
+			randomString = "";
+			for(int i=0; i<6; i++) {
+				randomString += randomArray[i] + "/";		
 			}
-		}
-		
-		if(isSameNumber||isLinearNumber||isSameOldNumber) {
-			System.out.println("다시 시도해 주세요.");
-		} else {
-			System.out.println("행운이 있기를: " + randomString);
+			randomString = randomString.substring(0, randomString.length()-1);
+			
+			for(int i=0; i<oldNumber.length; i++) {
+				if(randomString.equals(oldNumber[i])) {
+					isSameOldNumber = true;
+				} else {
+					isSameOldNumber = false;
+				}
+			}
+			
+			if(isSameNumber||isLinearNumber||isSameOldNumber) {
+				System.out.println("다시 시도해 주세요.");
+			} else {
+				System.out.println("행운이 있기를: " + randomString);
+			}
+			System.out.println("");
 		}
 	}
 
