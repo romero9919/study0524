@@ -5,7 +5,7 @@ public class ExCar {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Car car = new Car();
+		// Car car = new Car();
 		
 		Car car2 = new Car("클릭");
 		
