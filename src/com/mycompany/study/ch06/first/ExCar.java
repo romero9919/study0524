@@ -14,6 +14,8 @@ public class ExCar {
 		
 		car.go();
 		car.back();
+		
+		Mp3 mp3 = new Mp3;
 	}
 
 }
