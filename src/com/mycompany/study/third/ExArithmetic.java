@@ -14,6 +14,11 @@ public class ExArithmetic {
 		String result2 = arithmetic.wow("장원영");
 		System.out.println(result2);
 		
+		
+		arithmetic.good("김종원");
+		
+		int result3 = arithmetic.money();
+		System.out.println(result3);
 	}
 
 }

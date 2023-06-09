@@ -28,4 +28,19 @@ public class Arithmetic {
 		}
 		
 	}
+	
+	public void good(String goodgood) {
+		
+		if (goodgood.equals("아이브")) {
+			System.out.println("장원영은 너무 예뻐");
+		}else {
+			System.out.println("모르겟어요");
+		}
+	}
+	
+	public int money() {
+		
+		return 10000;
+		 
+	}
 }
