@@ -6,11 +6,25 @@ public class TrExGugu {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+
 		
-		Scanner scanner = new Scanner(System.in);
+		Gugu gugu = new Gugu();
 		
-		int result = scanner.nextInt();
-		System.out.println(result);
+		
+		while(true){
+			Scanner scanner = new Scanner(System.in);
+			int result = scanner.nextInt();
+			
+			if(result == 0) {
+				break;
+			} else {
+				gugu.gugudan(result);
+				System.out.println("--------------------");
+				scanner = new Scanner(System.in);
+				continue;
+			}
+		}
 	}
 
 }
