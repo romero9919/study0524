@@ -10,11 +10,12 @@ public abstract class Phone {
 	}
 	
 	public void turnOn() {
-		System.out.println("on");
-	}
+		System.out.println("turnOn");
+	}	
 	public void turnOff() {
-		System.out.println("off");
+		System.out.println("turnOff");
 	}
 	
 	public abstract void open();
+
 }
