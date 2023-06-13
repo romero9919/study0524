@@ -8,10 +8,10 @@ public class TrExGugu {
 		// TODO Auto-generated method stub
 
 
-		
+		Scanner scanner = new Scanner(System.in);
 		Gugu gugu = new Gugu();
 		
-		
+		/*
 		while(true){
 			Scanner scanner = new Scanner(System.in);
 			int result = scanner.nextInt();
@@ -23,6 +23,19 @@ public class TrExGugu {
 				System.out.println("--------------------");
 				scanner = new Scanner(System.in);
 				continue;
+			}
+		}
+		*/
+		
+		while(gugu.z) {
+			System.out.println("정수를 입력해 주세요");
+			int scannerInt = scanner.nextInt();
+			
+			if(scannerInt != 0) {
+				gugu.gugudan(scannerInt);
+			} else {
+				System.out.println("프로그램 종료");
+				gugu.z = false;
 			}
 		}
 	}
