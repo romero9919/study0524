@@ -18,4 +18,10 @@ public class DmbCellPhone extends CellPhone {
 		void turnOffDmb() {
 			System.out.println("DMB 방송 수신을 멈춥니다.");
 		}	
+		
+		
+		@Override
+		void powerOff() {
+			System.out.println("dmb.powerOff()");
+		}
 }
