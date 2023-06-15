@@ -10,7 +10,7 @@ public class ExLanguage {
 		// TODO Auto-generated method stub
 		
 		ArrayList<Language> arrayList = new ArrayList<Language>();
-		
+		// ArrayList, LinkedList, Vector
 		Language language = new Language("Java", 11);
 		
 		arrayList.add(language);
