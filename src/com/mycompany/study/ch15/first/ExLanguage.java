@@ -14,6 +14,8 @@ public class ExLanguage {
 		Language language = new Language("Java", 11);
 		
 		arrayList.add(language);
+		arrayList.add(new Language("Python", 8));
+		arrayList.add(new Language("C#", 6));
 		
 		for(Language a: arrayList) {
 			System.out.println(a.name);
